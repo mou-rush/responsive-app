@@ -1,0 +1,87 @@
+.hero {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.hero-paper {
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bitcoin-amount {
+  font-size: 50px;
+  color: #636161;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.bitcoin-value-in-usd {
+  color: #aeb8c4;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.wallet-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profit-or-loss {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #ee225d;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btc-icon-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #636161;
+}
+
+.btc-icon-circle {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.bitcoin-icon {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.btc-label {
+  color: #aeb8c4;
+  font-weight: bold;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.more-info-icon {
+  display: flex;
+  justify-content: center;
+  color: #aeb8c4;
+  cursor: pointer;
+  font-size: 25px;
+}
