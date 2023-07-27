@@ -66,13 +66,17 @@
   background-color: #574c4c;
 }
 
-.navbar :hover {
-  transform: scale(1.05);
-  transition: color 0.3s ease-in, transform 0.3s ease-in;
-}
-
 #remove-link {
   color: red;
+}
+
+/* Hover effect applied only to non-mobile devices 
+   (screen width greater than 768) */
+@media (min-width: 769px) {
+  .navbar :hover {
+    transform: scale(1.05);
+    transition: color 0.3s ease-in, transform 0.3s ease-in;
+  }
 }
 
 @media (max-width: 768px) {
@@ -80,6 +84,7 @@
     display: block;
     cursor: pointer;
     font-size: 35px;
+    padding-right: 10px;
   }
 
   .nav-elements {
@@ -116,6 +121,7 @@
     margin-top: 22px;
     margin-left: 15px;
   }
+
   .nav-elements ul li:not(:last-child) {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;

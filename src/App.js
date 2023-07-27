@@ -21,7 +21,6 @@ function App() {
   return (
     <div className="App">
       <Navbar navbarHeading="Bitcoin Wallet" />
-
       <Hero
         title="Bitcoin"
         showMoreInfo={handleShowMireInfo}
