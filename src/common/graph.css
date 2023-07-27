@@ -23,7 +23,7 @@
 
 /* ... */
 .line-chart {
-  padding: 30px;
+  padding-right: 30px;
   background-color: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding: 30px 0 0 30px;
 }
 
 .red-dot,
@@ -66,6 +67,18 @@
 .chart-container {
   width: 85%;
   margin: 0 auto;
+}
+
+@keyframes flicker {
+  0% {
+    fill-opacity: 1;
+  }
+  50% {
+    fill-opacity: 0.1;
+  }
+  100% {
+    fill-opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {

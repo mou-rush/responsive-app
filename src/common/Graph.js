@@ -47,24 +47,37 @@ const Chart = ({
         <div className="amounts-container">
           <div className="red-dot" />
           <div className="lower-amount">Lower: ${lowerAmount}</div>
+
           <div className="green-dot" />
           <div className="higher-amount">Higher: ${higherAmount}</div>
         </div>
+
         <ResponsiveContainer width="100%" height={300}>
-          <AreaChart data={data[activeTab]}>
+          <AreaChart data={data[activeTab]} margin={{ right: 40 }}>
             <Area
               type="monotone"
               dataKey="uv"
               stroke="#fa9c21"
+              strokeWidth={4}
               fill="#ffeedd"
-              dot={
-                <Dot
-                  fill="#fa9c21"
-                  stroke="#ffeedd"
-                  r={10}
-                  cx={(props) => props.points[data[activeTab].length - 1].x}
-                  cy={(props) => props.points[data[activeTab].length - 1].y}
-                />
+              dot={(props) =>
+                props.index === data[activeTab].length - 1 ? (
+                  <>
+                    {/* Outer Circle with Second Color */}
+                    <Dot
+                      fill="#ffeedd"
+                      r={30}
+                      cx={props.cx}
+                      cy={props.cy}
+                      fillOpacity={1}
+                      style={{
+                        animation: "flicker 1s infinite",
+                      }}
+                    />
+                    {/* Inner Circle with First Color */}
+                    <Dot fill="#fa9c21" r={20} cx={props.cx} cy={props.cy} />
+                  </>
+                ) : null
               }
             />
             <text x={20} y={280} fill="#636161" fontSize={20} fontWeight="bold">

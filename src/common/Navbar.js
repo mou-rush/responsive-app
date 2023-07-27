@@ -35,16 +35,16 @@ const Navbar = ({ navbarHeading }) => {
               <a href="/edit">Edit</a>
               <FontAwesomeIcon
                 icon={faEdit}
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "5px" }}
                 className="navbar-icon"
               />
             </li>
             <li>
-              <a href="/courier-info">Courier Info</a>
+              <a href="/courier-info">Courier info</a>
               <FontAwesomeIcon
                 icon={faInfoCircle}
                 className="navbar-icon"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "5px" }}
               />
             </li>
             <li>
@@ -52,7 +52,7 @@ const Navbar = ({ navbarHeading }) => {
               <FontAwesomeIcon
                 icon={faShare}
                 className="navbar-icon"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "5px" }}
               />
             </li>
             <li>
@@ -63,7 +63,7 @@ const Navbar = ({ navbarHeading }) => {
                 icon={faTrash}
                 className="navbar-icon"
                 id="remove-link"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "5px" }}
               />
             </li>
           </ul>

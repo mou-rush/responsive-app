@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./app.css";
 import Navbar from "./common/Navbar";
 import Chart from "./common/Graph";
 import Hero from "./common/Hero";

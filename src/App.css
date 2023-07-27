@@ -6,9 +6,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f6f9;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
 
 .tooltip {
   position: relative;
