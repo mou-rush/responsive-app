@@ -1,10 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display ", sans-serif;
   background-color: #f3f6f9;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fa9c21;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffeedd;
 }
 
 .tooltip {
